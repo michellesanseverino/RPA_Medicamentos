@@ -1,19 +1,19 @@
 # Estrutura do projeto
 
 ``` console
-📁 rpa_medicamentos/
-├── scraping/
-│   └── buscar_precos.py
-├── db/
-│   ├── mongo_connect.py
-│   └── s3_utils.py
-├── scripts/
-│   ├── lembrete_email.py
-│   └── agendador.py
-├── dashboard/
-│   └── flask_app.py
-├── data/
-│   └── medicamentos.json
-├── .env
-└── main.py
+📁 /medassist/
+│
+├── app/
+│   ├── models/          # Estrutura dos dados
+│   ├── services/        # Lógica de negócio
+│   ├── routes/          # Rotas da API
+│   ├── tasks/           # Agendamentos e automações
+│   ├── whatsapp/        # Integração com WhatsApp
+│   └── utils/           # Helpers
+│
+├── db/                  # Conexão com banco
+├── .env                 # Variáveis de ambiente (Twilio, Mongo, etc.)
+├── requirements.txt
+└── main.py              # Início da aplicação
+
 ```
